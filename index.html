@@ -7,6 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+  <!-- Meta Pixel Code -->
   <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -16,12 +17,12 @@
     t.src='https://connect.facebook.net/en_US/fbevents.js';
     s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script');
-    fbq('init', '2300554593694339');
+    fbq('init', '2167270857034006');
     fbq('track', 'PageView');
-  </script>raul01005
+  </script>
   <noscript>
     <img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=2300554593694339&ev=PageView&noscript=1"/>
+         src="https://www.facebook.com/tr?id=2167270857034006&ev=PageView&noscript=1"/>
   </noscript>
   <!-- End Meta Pixel Code -->
 
@@ -29,12 +30,21 @@
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background-color: #1a1a1a;
+      background: linear-gradient(-45deg, #ff416c, #ff4b2b, #1e90ff, #32cd32);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
       color: #fff;
       display: flex;
       flex-direction: column;
       align-items: center;
       padding: 20px;
+      backdrop-filter: brightness(1);
+    }
+
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
     }
 
     header {
@@ -76,12 +86,13 @@
     }
 
     .message {
-      background: #2a2a2a;
+      background: rgba(128, 0, 128, 0.7);
       padding: 15px;
       border-radius: 10px;
       margin: 20px 0;
       font-size: 16px;
       color: #fff;
+      box-shadow: 0 0 15px rgba(128, 0, 128, 0.6);
     }
 
     .whatsapp-button {
@@ -158,22 +169,25 @@
     }
 
     .clientes {
-      background-color: #444;
-      color: #fff;
+      background-color: rgba(50, 205, 50, 0.7);
+      color: #000;
       padding: 12px 20px;
       border-radius: 30px;
       font-weight: 600;
       margin-bottom: 10px;
+      box-shadow: 0 0 10px rgba(50, 205, 50, 0.5);
     }
 
     .trustpilot {
       font-size: 14px;
       padding: 8px 15px;
-      border: 1px dashed #999;
+      border: 1px dashed #ccc;
       border-radius: 10px;
       margin-bottom: 10px;
       text-align: center;
-      color: #ccc;
+      background-color: rgba(30, 144, 255, 0.6);
+      color: #fff;
+      box-shadow: 0 0 10px rgba(30, 144, 255, 0.4);
     }
 
     .trustpilot img {
@@ -217,7 +231,7 @@
   <hr />
 
   <section class="verified">
-    <a href="https://wa.me/5491126251957" target="_blank" onclick="fbq('trackCustom', 'ClickWhatsApp')">
+    <a href="https://wa.me/5491126254378" target="_blank" onclick="fbq('trackCustom', 'ClickWhatsApp')">
       <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo" width="50" height="50" />
     </a>
     <h2>✅ <b>Plataforma Verificada</b> ✅</h2>
@@ -229,7 +243,7 @@
   </div>
 
   <a class="whatsapp-button pulse" 
-     href="https://wa.me/5491126251957?text=Quiero%20el%20bono%20del%2050%%25" 
+     href="https://wa.me/5491126254378?text=Quiero%20el%20bono%20del%2050%%25" 
      target="_blank"
      onclick="fbq('trackCustom', 'ClickWhatsApp')">
     <i class="fab fa-whatsapp"></i> ¡QUIERO MI BONO!
